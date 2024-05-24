@@ -1,0 +1,15 @@
+16 May, 2024
+------------
+
+// Code written by Alex Arne, downloaded from
+// https://homepages.physik.uni-muenchen.de/
+// ~vondelft/Papers/ClebschGordan/ClebschGordan.cpp
+
+Needed to install Lapack libraries
+sudo apt install libblas-dev liblapack-dev
+
+Compilation commands in Makefile
+
+This may be relevant if you try to port the code to Python:
++ https://stackoverflow.com/questions/76776727/
+ difference-in-values-returned-from-c-and-python-calling-the-same-underlying-la
