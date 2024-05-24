@@ -13,3 +13,8 @@ Compilation commands in Makefile
 This may be relevant if you try to port the code to Python:
 + https://stackoverflow.com/questions/76776727/
  difference-in-values-returned-from-c-and-python-calling-the-same-underlying-la
+
+24 May, 2024
+------------
+Installed swig. Testing example from https://www.swig.org/Doc1.3/Python.html
+Minimal example works as advertised.
