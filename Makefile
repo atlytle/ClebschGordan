@@ -1,13 +1,15 @@
 all: ClebschGordan
 
-swig: example.py example_wrap.c
+swig: ClebschGordan.py ClebschGordan_wrap.cxx
 
 ClebschGordan: ClebschGordan.cpp
 	g++ ClebschGordan.cpp -o ClebschGordan -llapack
 
-example.py example_wrap.c: example.i example.h example.c
-	swig -python example.i
-	python setup_swig.py build_ext --inplace
+ClebschGordan.py ClebschGordan_wrap.cxx: ClebschGordan.i ClebschGordan.h ClebschGordan.c
+	swig -python ClebschGordan.i
+	python setup_ClebschGordan.py build_ext --inplace
 
 clean:
-	rm example.py example_wrap.c ClebschGordan
+	rm ClebschGordan
+	rm ClebschGordan.py ClebschGordan_wrap.cxx _Clebsch*
+	rm -rf build/
