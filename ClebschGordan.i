@@ -15,5 +15,5 @@ namespace clebsch {
 
     public:
         int operator()(int n, int k);
-    } binomial;
+    };
 }

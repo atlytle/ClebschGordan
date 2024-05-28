@@ -55,7 +55,7 @@ namespace clebsch {
 
     public:
         int operator()(int n, int k);
-    } binomial;
+    };
 
     // Eq. (19) and (25)
     class weight {

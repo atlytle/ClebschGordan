@@ -16,6 +16,8 @@ int clebsch::binomial_t::operator()(int n, int k) {
     return cache[n * (n + 1) / 2 + k];
 }
 
+clebsch::binomial_t binomial;
+
 // implementation of "weight" starts here
 
 clebsch::weight::weight(int N) : elem(N), N(N) {}
