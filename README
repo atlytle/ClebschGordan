@@ -18,3 +18,16 @@ This may be relevant if you try to port the code to Python:
 ------------
 Installed swig. Testing example from https://www.swig.org/Doc1.3/Python.html
 Minimal example works as advertised.
+
+27 May, 2024
+------------
+Extending swig example to ClebschGordan.
+Split header off from ClebschGordan.cpp.
+Expose binomial_t implementation to swig interface in ClebschGordan.i
+
+28 May, 2024
+------------
+Moved "binomial" object declaration to ClebschGordan.cpp.
+Needed to use dynamic linking [https://www.swig.org/Doc1.3/Python.html]
+to get Lapack libraries included. 
+use_ClebschGordan.py works after build.
