@@ -50,6 +50,16 @@ int &clebsch::weight::operator()(int k) {
     return elem[k - 1];
 }
 
+int &clebsch::weight::operator[](int k) {
+    assert(1 <= k && k <= N);
+    return elem[k - 1];
+}
+
+int clebsch::weight::operator[](int k) const {
+    assert(1 <= k && k <= N);
+    return elem[k - 1];
+}
+
 const int &clebsch::weight::operator()(int k) const {
     assert(1 <= k && k <= N);
     return elem[k - 1];

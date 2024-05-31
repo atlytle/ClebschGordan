@@ -31,3 +31,13 @@ Moved "binomial" object declaration to ClebschGordan.cpp.
 Needed to use dynamic linking [https://www.swig.org/Doc1.3/Python.html]
 to get Lapack libraries included. 
 use_ClebschGordan.py works after build.
+
+30 May, 2024
+------------
+Include "weight" class in ClebschGordan.i. These are the function
+arguments to the downstream functions I want to use, so we
+need to be able to create these. This didn't work 'out of the box'
+because the C++ constructors don't set the weights directly, and python
+doesn't have access to memory. Instead introduced new
+get/set functionality. Thank you to Kevin Ingles for assistance
+with this.

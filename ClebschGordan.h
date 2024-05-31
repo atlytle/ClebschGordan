@@ -74,10 +74,15 @@ namespace clebsch {
 
         // assign from another instance
         clebsch::weight &operator=(const clebsch::weight &w);
+        
 
         // access elements of this weight (k = 1, ..., N)
         int &operator()(int k);
         const int &operator()(int k) const;
+
+        // access elements of this weight (k = 1, ..., N)
+        int &operator[](int k);
+        int operator[](int k) const;
 
         // compare weights
         // Eq. (C1)
