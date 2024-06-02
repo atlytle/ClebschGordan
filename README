@@ -41,3 +41,8 @@ because the C++ constructors don't set the weights directly, and python
 doesn't have access to memory. Instead introduced new
 get/set functionality. Thank you to Kevin Ingles for assistance
 with this.
+
+02 June, 2024
+-------------
+Factorise use_ClebschGordan.py. Reproduces behavior of
+5) Calculate Clebsch-Gordan coefficients for S x S' -> S'' of ClebschGordan.cpp

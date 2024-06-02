@@ -69,6 +69,7 @@ namespace clebsch {
         // Eq. (22)
         long long dimension() const;
     };
+    
 class coefficients {
         std::map<std::vector<int>, double> clzx;
 
