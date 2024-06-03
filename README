@@ -46,3 +46,7 @@ with this.
 -------------
 Factorise use_ClebschGordan.py. Reproduces behavior of
 5) Calculate Clebsch-Gordan coefficients for S x S' -> S'' of ClebschGordan.cpp
+
+03 June, 2024
+-------------
+Set up comparisons between C++ code and sympy SU(2) CGs.
