@@ -80,7 +80,7 @@ namespace clebsch {
         int &operator()(int k);
         const int &operator()(int k) const;
 
-        // access elements of this weight (k = 1, ..., N)
+        // access elements of this weight (k = 1, ..., N) for swig
         int &operator[](int k);
         int operator[](int k) const;
 

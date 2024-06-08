@@ -50,3 +50,13 @@ Factorise use_ClebschGordan.py. Reproduces behavior of
 03 June, 2024
 -------------
 Set up comparisons between C++ code and sympy SU(2) CGs.
+
+06 June, 2024
+-------------
+Start thinking about a port of the C++ code. Work in CGport.py.
+
+08 June, 2024
+-------------
+Fixed error in in CG_swig() [m1<-->m2] in coeffs(m1, m2,..).
+This passed test_CG_swig() because I had only tested w1==w2.
+Generalized to CG_swig(w1, w2, w3), verified tests pass.
